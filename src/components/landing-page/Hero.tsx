@@ -1,8 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import CustomButton from "../CustomButton";
-import Image from "next/image";
-import { heroImage } from "@/assets/images";
 // import { motion } from "framer-motion";
 
 const HeroSection = () => {

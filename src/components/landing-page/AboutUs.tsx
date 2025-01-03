@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { aboutImage } from "@/assets/images";
 import { aboutUsImage } from "@/assets/icons";
 
 export default function AboutUs() {

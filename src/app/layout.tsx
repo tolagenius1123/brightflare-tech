@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-
-const bricolageGrotesque = Bricolage_Grotesque({
-	variable: "--font-bricolage-grotesque",
-	subsets: ["latin"],
-});
 
 const poppins = Poppins({
 	variable: "--font-poppins",
