@@ -4,19 +4,37 @@ import Image from "next/image";
 import Link from "next/link";
 import { brightflareLogo } from "@/assets/images";
 import CustomButton from "../CustomButton";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
+	const [isScrolling, setIsScrolling] = useState<boolean>(false);
 	const router = useRouter();
 	const pathname = usePathname();
 
+	const handleScrollDown = () => {
+		if (window.scrollY >= 50) {
+			setIsScrolling(true);
+		} else {
+			setIsScrolling(false);
+		}
+	};
+
+	window.addEventListener("scroll", handleScrollDown);
+
 	return (
-		<div className="w-full bg-almond px-8 md:px-20 py-2 flex items-center justify-between fixed z-10 shadow-md">
+		<div
+			className={cn(
+				"w-full px-8 md:px-20 py-2 flex items-center justify-between fixed z-10",
+				isScrolling ? "backdrop-blur-md" : "bg-almond"
+			)}
+		>
 			<Link href="/">
 				<Image
 					src={brightflareLogo}
 					alt="brightflareLogo"
-					height={200}
-					width={200}
+					className="h-12 w-32 md:h-16 md:w-40"
 				/>
 			</Link>
 			<div className="hidden md:flex items-center gap-14">
@@ -32,7 +50,7 @@ export default function Navbar() {
 						Home
 					</Link>
 					<Link
-						href="/about"
+						href="/#about"
 						className={`${
 							pathname === "/about"
 								? "text-darkGrey"
@@ -42,7 +60,7 @@ export default function Navbar() {
 						About Us
 					</Link>
 					<Link
-						href="/#services"
+						href="/#courses"
 						className={`${
 							pathname === "/#services"
 								? "text-darkGrey"
@@ -69,7 +87,7 @@ export default function Navbar() {
 					btnAction={() => router.push("/")}
 				/>
 			</div>
-			{/* <MobileMenu /> */}
+			<MobileMenu />
 		</div>
 	);
 }

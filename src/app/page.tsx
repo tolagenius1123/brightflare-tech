@@ -4,6 +4,9 @@ import HeroSection from "@/components/landing-page/Hero";
 import Navbar from "@/components/landing-page/Navbar";
 import Team from "@/components/landing-page/Team";
 import FaQs from "@/components/landing-page/FAQs";
+import ContactUs from "@/components/landing-page/ContactUs";
+import YouTube from "@/components/landing-page/YouTube";
+import Footer from "@/components/landing-page/Footer";
 
 export default function Home() {
 	return (
@@ -13,7 +16,10 @@ export default function Home() {
 			<AboutUs />
 			<Courses />
 			<Team />
-			<FaQs/>
+			<YouTube />
+			<FaQs />
+			<ContactUs />
+			<Footer />
 		</main>
 	);
 }

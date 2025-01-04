@@ -11,7 +11,7 @@ export default function Team() {
 			<div className="flex justify-around items-center">
 				<h1 className="text-3xl md:text-4xl">Meet Our Team</h1>
 			</div>
-			<div className="mt-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+			<div className="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
 				<div className=" cursor-pointer">
 					<Image src={bright} alt="team-image"/>
 				</div>

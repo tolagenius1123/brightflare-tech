@@ -1,3 +1,108 @@
+import Image from "next/image";
+import Link from "next/link";
+import {
+	FacebookIcon,
+	InstagramIcon,
+	LinkedInIcon,
+	TwitterIcon,
+	WhatsappIcon,
+} from "@/assets/icons";
+import { brightflareLogo } from "@/assets/images";
+
 export default function Footer() {
-	return <div>Footer</div>;
+	return (
+		<>
+			<div className="w-full bg-white text-black px-8 md:px-20 pt-20">
+				<div className="flex flex-col md:flex-row justify-between gap-10">
+					<div className="flex flex-col gap-4">
+						<Image
+							src={brightflareLogo}
+							alt="footer-logo"
+							className="h-16 w-40"
+						/>
+						<div className="flex flex-col">
+							<p className="font-semibold">Address:</p>
+							<p>10 College Place, Southampton, SO15 2FD </p>
+						</div>
+						<div className="mt-5 flex flex-col">
+							<p className="font-semibold">Contact:</p>
+							<div className="">
+								<div className="flex flex-col">
+									<div className="flex items-center gap-2">
+										<span className="">Mobile:</span>
+										+44 7340 764149
+									</div>
+									<div className="flex items-center gap-2">
+										<span className="">Landline:</span>
+										+44 2380 018034
+									</div>
+								</div>
+								<p className="">info@cw24.co.uk</p>
+							</div>
+						</div>
+						<div className="mt-5 flex items-center gap-3">
+							<Link
+								href="https://web.facebook.com/profile.php?id=61567778763724&_rdc=1&_rdr"
+								target="_blank"
+							>
+								<Image src={TwitterIcon} alt="twitter-icon" />
+							</Link>
+							<Link href="/">
+								<Image src={FacebookIcon} alt="facebook-icon" />
+							</Link>
+							<Link href="/">
+								<Image
+									src={InstagramIcon}
+									alt="instagram-icon"
+								/>
+							</Link>
+							<Link href="/">
+								<Image
+									src={LinkedInIcon}
+									alt="instagram-icon"
+								/>
+							</Link>
+							<Link href="/">
+								<Image
+									src={WhatsappIcon}
+									alt="instagram-icon"
+								/>
+							</Link>
+						</div>
+					</div>
+					<div className="flex gap-20">
+						<div className="flex flex-col gap-3">
+							<Link href="/">About Us</Link>
+							<Link href="/">Our Services</Link>
+							<Link href="/">Contact Support</Link>
+							<Link href="/">Careers Page</Link>
+							<Link href="/">Blog Articles</Link>
+						</div>
+						<div className="flex flex-col gap-3">
+							<Link href="/">FAQs Section</Link>
+							<Link href="/">Client Portal</Link>
+							<Link href="/">Feedback Form</Link>
+							<Link href="/">Resource Center</Link>
+							<Link href="/">Site Map</Link>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="mt-20 h-[1px] bg-black w-full"></div>
+			<div className="mt-10 flex flex-col md:flex-row justify-between gap-5 px-8 md:px-10 pb-10">
+				<p>© 2024 Brightflare. All rights reserved.</p>
+				{/* <div className="flex flex-col md:flex-row gap-4">
+					<Link href="/" className="underline">
+						Privacy Policy
+					</Link>
+					<Link href="/" className="underline">
+						Terms of Service
+					</Link>
+					<Link href="/" className="underline">
+						Cookies Seetings
+					</Link>
+				</div> */}
+			</div>
+		</>
+	);
 }

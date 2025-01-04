@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import CustomButton from "../CustomButton";
-// import { motion } from "framer-motion";
 
 const HeroSection = () => {
 	const router = useRouter();
