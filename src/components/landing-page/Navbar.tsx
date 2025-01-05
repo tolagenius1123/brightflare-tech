@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { brightflareLogo } from "@/assets/images";
 import CustomButton from "../CustomButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 // import MobileMenu from "./MobileMenu";
 
@@ -21,7 +21,15 @@ export default function Navbar() {
 		}
 	};
 
-	window.addEventListener("scroll", handleScrollDown);
+	useEffect(() => {
+		// Add the event listener when the component mounts
+		window.addEventListener("scroll", handleScrollDown);
+
+		// Cleanup event listener when the component unmounts
+		return () => {
+			window.removeEventListener("scroll", handleScrollDown);
+		};
+	}, []);
 
 	return (
 		<div
