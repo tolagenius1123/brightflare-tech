@@ -32,14 +32,18 @@ export default function Team() {
 					<CustomButton
 						btnTitle="Join the Tutor Waiting List"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 px-4 h-[48px] bg-customBlack cursor-pointer"
-						btnAction={() => router.push("/")}
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 px-4 bg-customBlack cursor-pointer"
+						btnAction={() =>
+							router.push("/https://forms.gle/eEqkEUZew3vx87Ui6")
+						}
 					/>
 					<CustomButton
 						btnTitle="Sponsor a Learner"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack font-semibold border-2 py-2 px-4 h-[48px] bg-transparent border-customBlack cursor-pointer"
-						btnAction={() => router.push("/")}
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack font-semibold border-2 py-2 px-4 bg-transparent border-customBlack cursor-pointer"
+						btnAction={() =>
+							router.push("/https://forms.gle/mVtGyV5fH67m6pb18")
+						}
 					/>
 				</div>
 			</div>

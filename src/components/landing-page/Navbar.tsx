@@ -6,7 +6,7 @@ import { brightflareLogo } from "@/assets/images";
 import CustomButton from "../CustomButton";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-// import MobileMenu from "./MobileMenu";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
 	const [isScrolling, setIsScrolling] = useState<boolean>(false);
@@ -92,10 +92,12 @@ export default function Navbar() {
 					btnTitle="Register"
 					btnType="button"
 					btnStyles="text-white rounded-sm border-none w-[110px] h-[50px] bg-customRed cursor-pointer"
-					btnAction={() => router.push("/")}
+					btnAction={() =>
+						router.push("/https://forms.gle/MJ1iNDnCoD9HKVj9A")
+					}
 				/>
 			</div>
-			{/* <MobileMenu /> */}
+			<MobileMenu />
 		</div>
 	);
 }

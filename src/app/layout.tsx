@@ -20,11 +20,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${poppins.className}`}>
-				{/* <body className={`${bricolageGrotesque.className}`}> */}
-				{children}
-			</body>
+		<html lang="en" className="scroll-smooth">
+			<body className={`${poppins.className}`}>{children}</body>
 		</html>
 	);
 }

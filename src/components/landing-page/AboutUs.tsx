@@ -3,7 +3,10 @@ import { aboutUsImage } from "@/assets/icons";
 
 export default function AboutUs() {
 	return (
-		<div className="bg-white px-8 md:px-20 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+		<div
+			id="about"
+			className="bg-white px-8 md:px-20 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20"
+		>
 			<div className="w-full md:w-1/2 flex items-center justify-center">
 				<Image
 					src={aboutUsImage}

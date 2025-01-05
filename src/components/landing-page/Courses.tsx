@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Courses() {
 	return (
-		<div className="bg-almond px-8 md:px-20 py-20">
+		<div id="courses" className="bg-almond px-8 md:px-20 py-20">
 			<div className="flex justify-around items-center">
 				<h1 className="text-3xl md:text-4xl font-semibold">
 					Our Courses

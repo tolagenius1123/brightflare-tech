@@ -8,6 +8,7 @@ import {
 	WhatsappIcon,
 } from "@/assets/icons";
 import { brightflareLogo } from "@/assets/images";
+import { Youtube } from "lucide-react";
 
 export default function Footer() {
 	return (
@@ -32,37 +33,42 @@ export default function Footer() {
 										<span className="">Mobile:</span>
 										+44 7340 764149
 									</div>
-									<div className="flex items-center gap-2">
-										<span className="">Landline:</span>
-										+44 2380 018034
-									</div>
 								</div>
 								<p className="">info@cw24.co.uk</p>
 							</div>
 						</div>
 						<div className="mt-5 flex items-center gap-3">
 							<Link
-								href="https://web.facebook.com/profile.php?id=61567778763724&_rdc=1&_rdr"
+								href="https://x.com/BrightflareTech"
 								target="_blank"
 							>
 								<Image src={TwitterIcon} alt="twitter-icon" />
 							</Link>
-							<Link href="/">
+							{/* <Link href="/" target="_blank">
 								<Image src={FacebookIcon} alt="facebook-icon" />
-							</Link>
-							<Link href="/">
+							</Link> */}
+							<Link
+								href="/https://www.instagram.com/brightflare_technologies?igsh=YnJycjVrZXQ1ZnEy"
+								target="_blank"
+							>
 								<Image
 									src={InstagramIcon}
 									alt="instagram-icon"
 								/>
 							</Link>
-							<Link href="/">
+							<Link
+								href="/https://www.linkedin.com/company/brightflare-tech-academy"
+								target="_blank"
+							>
 								<Image
 									src={LinkedInIcon}
 									alt="instagram-icon"
 								/>
 							</Link>
-							<Link href="/">
+							<Link
+								href="/https://wa.me/message/NLZX3GTSGSOCK1"
+								target="_blank"
+							>
 								<Image
 									src={WhatsappIcon}
 									alt="instagram-icon"
@@ -72,18 +78,36 @@ export default function Footer() {
 					</div>
 					<div className="flex gap-20">
 						<div className="flex flex-col gap-3">
-							<Link href="/">About Us</Link>
-							<Link href="/">Our Services</Link>
-							<Link href="/">Contact Support</Link>
-							<Link href="/">Careers Page</Link>
-							<Link href="/">Blog Articles</Link>
+							<Link href="/#about">About Us</Link>
+							<Link href="/#courses">Courses</Link>
+							<Link href="/#contact">Contact Support</Link>
+							<Link
+								href="https://forms.gle/kpmTPkc1XZvdesSh7"
+								target="_blank"
+							>
+								Personal Tutor Form
+							</Link>
 						</div>
 						<div className="flex flex-col gap-3">
-							<Link href="/">FAQs Section</Link>
-							<Link href="/">Client Portal</Link>
-							<Link href="/">Feedback Form</Link>
-							<Link href="/">Resource Center</Link>
-							<Link href="/">Site Map</Link>
+							<Link href="/#faqs">FAQs Section</Link>
+							<Link
+								href="/https://forms.gle/eEqkEUZew3vx87Ui6"
+								target="_blank"
+							>
+								Tutor form
+							</Link>
+							<Link
+								href="/https://forms.gle/mVtGyV5fH67m6pb18"
+								target="_blank"
+							>
+								Sponsorship Form
+							</Link>
+							<Link
+								href="https://forms.gle/MJ1iNDnCoD9HKVj9A"
+								target="_blank"
+							>
+								Registration Form
+							</Link>
 						</div>
 					</div>
 				</div>

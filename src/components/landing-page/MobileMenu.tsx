@@ -2,8 +2,19 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import CustomButton from "../CustomButton";
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
+import {
+	Sheet,
+	SheetClose,
+	SheetContent,
+	SheetDescription,
+	SheetFooter,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger,
+} from "../ui/sheet";
 import { AlignRight } from "lucide-react";
+import Image from "next/image";
+import { brightflareLogo } from "@/assets/images";
 
 export default function MobileMenu() {
 	const pathName = usePathname();
@@ -16,8 +27,16 @@ export default function MobileMenu() {
 					<AlignRight className="h-8 w-8 text-customBlack" />
 				</SheetTrigger>
 				<SheetContent>
-					{/* Add an accessible title */}
-					<h2 className="sr-only">Mobile Navigation Menu</h2>
+					<SheetHeader>
+						<SheetTitle>
+							<Image
+								src={brightflareLogo}
+								alt="brightflareLogo"
+								className="h-12 w-32 md:h-16 md:w-40"
+							/>
+						</SheetTitle>
+						<SheetDescription>{""}</SheetDescription>
+					</SheetHeader>
 					<div className="mt-5">
 						<div className="flex flex-col gap-6">
 							<div className="flex flex-col gap-4">
@@ -70,6 +89,11 @@ export default function MobileMenu() {
 							/>
 						</div>
 					</div>
+					{/* <SheetFooter>
+						<SheetClose asChild>
+							<button type="submit">Save changes</button>
+						</SheetClose>
+					</SheetFooter> */}
 				</SheetContent>
 			</Sheet>
 		</div>

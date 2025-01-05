@@ -26,13 +26,17 @@ const HeroSection = () => {
 						btnTitle="Register For Free Program"
 						btnType="button"
 						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 md:py-2 px-4 bg-customBlack cursor-pointer"
-						btnAction={() => router.push("/")}
+						btnAction={() =>
+							router.push("/https://forms.gle/MJ1iNDnCoD9HKVj9A")
+						}
 					/>
 					<CustomButton
 						btnTitle="Get A Personal Tutor"
 						btnType="button"
 						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack font-semibold border-2 py-2 md:py-2 px-4 bg-transparent border-customBlack cursor-pointer"
-						btnAction={() => router.push("/")}
+						btnAction={() =>
+							router.push("/https://forms.gle/kpmTPkc1XZvdesSh7")
+						}
 					/>
 				</div>
 				<div className="mt-5 flex items-center gap-4">
