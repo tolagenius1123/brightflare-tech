@@ -41,41 +41,25 @@ export default function MobileMenu() {
 							<div className="flex flex-col gap-4">
 								<Link
 									href="/"
-									className={`font-medium hover:text-lightGreen ${
-										pathName === "/"
-											? "text-darkGrey"
-											: "text-lightGrey"
-									}`}
+									className="text-customBlack hover:text-customDarkGrey"
 								>
 									<SheetClose>Home</SheetClose>
 								</Link>
 								<Link
 									href="/#about"
-									className={`font-medium hover:text-lightGreen ${
-										pathName === "/about"
-											? "text-darkGrey"
-											: "text-lightGrey"
-									}`}
+									className="text-customBlack hover:text-customDarkGrey"
 								>
 									<SheetClose>About</SheetClose>
 								</Link>
 								<Link
 									href="/#courses"
-									className={`font-medium hover:text-lightGreen ${
-										pathName === "/#services"
-											? "text-darkGrey"
-											: "text-lightGrey"
-									}`}
+									className="text-customBlack hover:text-customDarkGrey"
 								>
 									<SheetClose>Courses</SheetClose>
 								</Link>
 								<Link
 									href="/#contact"
-									className={`font-medium hover:text-lightGreen ${
-										pathName === "/#contact"
-											? "text-darkGrey"
-											: "text-lightGrey"
-									}`}
+									className="text-customBlack hover:text-customDarkGrey"
 								>
 									<SheetClose>Contact Us</SheetClose>
 								</Link>
@@ -84,7 +68,11 @@ export default function MobileMenu() {
 								btnTitle="Register"
 								btnType="button"
 								btnStyles="text-white rounded-sm border-none w-[110px] h-[50px] bg-customRed cursor-pointer"
-								btnAction={() => router.push("/")}
+								btnAction={() =>
+									router.push(
+										"https://forms.gle/MJ1iNDnCoD9HKVj9A"
+									)
+								}
 							/>
 						</div>
 					</div>

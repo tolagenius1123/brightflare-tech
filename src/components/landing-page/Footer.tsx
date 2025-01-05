@@ -29,7 +29,7 @@ export default function Footer() {
 								<div className="flex flex-col">
 									<div className="flex items-center gap-2">
 										<span className="">Mobile:</span>
-										+234 902 180 6462
+										+234 703 831 9232
 									</div>
 								</div>
 								<p className="">

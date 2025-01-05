@@ -49,41 +49,25 @@ export default function Navbar() {
 				<div className="flex gap-10 items-center">
 					<Link
 						href="/"
-						className={`${
-							pathname === "/"
-								? "text-darkGrey"
-								: " text-lightGrey"
-						} hover:text-darkGrey`}
+						className="text-customBlack hover:text-customDarkGrey"
 					>
 						Home
 					</Link>
 					<Link
 						href="/#about"
-						className={`${
-							pathname === "/about"
-								? "text-darkGrey"
-								: " text-lightGrey"
-						} hover:text-darkGrey`}
+						className="text-customBlack hover:text-customDarkGrey"
 					>
 						About Us
 					</Link>
 					<Link
 						href="/#courses"
-						className={`${
-							pathname === "/#services"
-								? "text-darkGrey"
-								: " text-lightGrey"
-						} hover:text-darkGrey`}
+						className="text-customBlack hover:text-customDarkGrey"
 					>
 						Courses
 					</Link>
 					<Link
 						href="/#contact"
-						className={`${
-							pathname === "/#contact"
-								? "text-darkGrey"
-								: " text-lightGrey"
-						} hover:text-darkGrey`}
+						className="text-customBlack hover:text-customDarkGrey"
 					>
 						Contact Us
 					</Link>

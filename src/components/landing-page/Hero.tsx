@@ -9,10 +9,10 @@ const HeroSection = () => {
 	return (
 		<div
 			id="hero"
-			className="w-full bg-almond  pt-[150px] md:pt-[180px] flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0"
+			className="w-full bg-almond pt-[150px] md:pt-[120px] flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0"
 		>
 			<div className="w-full md:w-[60%] px-8 md:px-20">
-				<h1 className="font-bricolage text-darkGrey text-[40px] md:text-[55px] font-bold leading-[50px] md:leading-[70px]">
+				<h1 className="w-full font-bricolage text-darkGrey text-[40px] md:text-[47px] font-bold leading-[50px] md:leading-[70px]">
 					Empowering the future of tech enthusiasts through{" "}
 					<span className="text-customRed">education</span> and{" "}
 					<span className="text-customDarkRed">innovation</span>.
@@ -52,7 +52,7 @@ const HeroSection = () => {
 			</div>
 
 			<div
-				className="w-full h-[400px] md:h-screen md:w-[50%] flex items-center justify-center"
+				className="w-full h-[400px] md:h-[120vh] md:w-[50%] flex items-center justify-center"
 				style={{
 					backgroundImage: `url(${heroImage.src})`,
 					backgroundPosition: "center",

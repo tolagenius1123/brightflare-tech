@@ -9,7 +9,7 @@ export default function FaQs() {
 				className="w-full bg-almond px-8 md:px-20 py-20 text-black"
 			>
 				<h1 className="text-2xl md:text-4xl font-semibold">FAQs</h1>
-				<p className="mt-5">
+				<p className="mt-5 text-[14px]">
 					Find answers to your most pressing questions about our
 					recruitment services and processes.
 				</p>

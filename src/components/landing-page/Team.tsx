@@ -14,16 +14,16 @@ export default function Team() {
 				</h1>
 			</div>
 			<div className="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-				<div className=" cursor-pointer">
+				<div className="cursor-pointer transform transition-transform duration-300 hover:scale-105">
 					<Image src={bright} alt="team-image" className="w-full" />
 				</div>
-				<div className=" cursor-pointer">
+				<div className="cursor-pointer transform transition-transform duration-300 hover:scale-105">
 					<Image src={joy} alt="team-image" className="w-full" />
 				</div>
-				<div className=" cursor-pointer">
+				<div className="cursor-pointer transform transition-transform duration-300 hover:scale-105">
 					<Image src={ada} alt="team-image" className="w-full" />
 				</div>
-				<div className=" cursor-pointer">
+				<div className="cursor-pointer transform transition-transform duration-300 hover:scale-105">
 					<Image src={musa} alt="team-image" className="w-full" />
 				</div>
 			</div>

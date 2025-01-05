@@ -39,7 +39,7 @@ export default function ContactUs() {
 						<div className="flex flex-col items-center">
 							<div className="flex items-center gap-2">
 								<span className="font-semibold">Mobile:</span>
-								+234 902 180 6462
+								+234 703 831 9232
 							</div>
 						</div>
 					</div>
