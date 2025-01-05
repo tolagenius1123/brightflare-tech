@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-	FacebookIcon,
 	InstagramIcon,
 	LinkedInIcon,
 	TwitterIcon,
 	WhatsappIcon,
 } from "@/assets/icons";
 import { brightflareLogo } from "@/assets/images";
-import { Youtube } from "lucide-react";
 
 export default function Footer() {
 	return (
@@ -23,7 +21,7 @@ export default function Footer() {
 						/>
 						<div className="flex flex-col">
 							<p className="font-semibold">Address:</p>
-							<p>10 College Place, Southampton, SO15 2FD </p>
+							<p>Yaba, Lagos, Nigeria.</p>
 						</div>
 						<div className="mt-5 flex flex-col">
 							<p className="font-semibold">Contact:</p>
@@ -31,10 +29,12 @@ export default function Footer() {
 								<div className="flex flex-col">
 									<div className="flex items-center gap-2">
 										<span className="">Mobile:</span>
-										+44 7340 764149
+										+234 902 180 6462
 									</div>
 								</div>
-								<p className="">info@cw24.co.uk</p>
+								<p className="">
+									brightflaretechnologies@gmail.com
+								</p>
 							</div>
 						</div>
 						<div className="mt-5 flex items-center gap-3">

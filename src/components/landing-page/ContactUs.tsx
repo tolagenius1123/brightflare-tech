@@ -24,7 +24,9 @@ export default function ContactUs() {
 						<p className="font-normal">
 							Reach us at your convenience for any questions.
 						</p>
-						<Link href="/">info@cw24.co.uk</Link>
+						<Link href="mailto:brightflaretechnologies@gmail.com">
+							brightflaretechnologies@gmail.com
+						</Link>
 					</div>
 					<div className="flex flex-col gap-3 items-center">
 						<Image src={PhoneIcon} alt="phone-icon" />
@@ -37,7 +39,7 @@ export default function ContactUs() {
 						<div className="flex flex-col items-center">
 							<div className="flex items-center gap-2">
 								<span className="font-semibold">Mobile:</span>
-								+234 8141366380
+								+234 902 180 6462
 							</div>
 						</div>
 					</div>
@@ -49,7 +51,7 @@ export default function ContactUs() {
 						<p className="font-normal">
 							Visit us for a personal consultation and support
 						</p>
-						<p>10 College Place, Southampton, SO15 2FD</p>
+						<p>Yaba, Lagos, Nigeria.</p>
 					</div>
 				</div>
 			</div>
