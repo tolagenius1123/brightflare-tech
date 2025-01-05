@@ -6,7 +6,7 @@ import { brightflareLogo } from "@/assets/images";
 import CustomButton from "../CustomButton";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import MobileMenu from "./MobileMenu";
+// import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
 	const [isScrolling, setIsScrolling] = useState<boolean>(false);
