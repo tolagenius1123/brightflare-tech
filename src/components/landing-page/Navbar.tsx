@@ -1,5 +1,5 @@
 "use client";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { brightflareLogo } from "@/assets/images";
@@ -11,7 +11,6 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
 	const [isScrolling, setIsScrolling] = useState<boolean>(false);
 	const router = useRouter();
-	const pathname = usePathname();
 
 	const handleScrollDown = () => {
 		if (window.scrollY >= 50) {

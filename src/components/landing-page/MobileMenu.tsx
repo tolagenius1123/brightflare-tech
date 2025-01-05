@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import CustomButton from "../CustomButton";
 import {
 	Sheet,
@@ -16,7 +16,6 @@ import Image from "next/image";
 import { brightflareLogo } from "@/assets/images";
 
 export default function MobileMenu() {
-	const pathName = usePathname();
 	const router = useRouter();
 
 	return (
