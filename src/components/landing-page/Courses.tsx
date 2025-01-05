@@ -5,7 +5,9 @@ export default function Courses() {
 	return (
 		<div className="bg-almond px-8 md:px-20 py-20">
 			<div className="flex justify-around items-center">
-				<h1 className="text-3xl md:text-4xl">Our Courses</h1>
+				<h1 className="text-3xl md:text-4xl font-semibold">
+					Our Courses
+				</h1>
 			</div>
 			<div className="mt-10 md:mt-2 flex flex-col md:flex-row items-center text-darkGrey">
 				<div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 text-customBlack text-nowrap gap-4">

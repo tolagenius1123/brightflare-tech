@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import CustomButton from "../CustomButton";
+import { heroImage } from "@/assets/images";
 
 const HeroSection = () => {
 	const router = useRouter();
@@ -46,7 +47,15 @@ const HeroSection = () => {
 				</div>
 			</div>
 
-			<div className="heroBg w-full h-[400px] md:h-screen md:w-[50%] flex items-center justify-center">
+			<div
+				className="w-full h-[400px] md:h-screen md:w-[50%] flex items-center justify-center"
+				style={{
+					backgroundImage: `url(${heroImage.src})`,
+					backgroundPosition: "center",
+					backgroundSize: "cover",
+					backgroundRepeat: "no-repeat",
+				}}
+			>
 				{/* <Image src={heroImage} alt="hero-image" className="" /> */}
 			</div>
 		</div>
