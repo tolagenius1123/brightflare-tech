@@ -93,7 +93,7 @@ export default function Navbar() {
 					btnType="button"
 					btnStyles="text-white rounded-sm border-none w-[110px] h-[50px] bg-customRed cursor-pointer"
 					btnAction={() =>
-						router.push("/https://forms.gle/MJ1iNDnCoD9HKVj9A")
+						router.push("https://forms.gle/MJ1iNDnCoD9HKVj9A")
 					}
 				/>
 			</div>

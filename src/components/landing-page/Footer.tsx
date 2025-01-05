@@ -48,7 +48,7 @@ export default function Footer() {
 								<Image src={FacebookIcon} alt="facebook-icon" />
 							</Link> */}
 							<Link
-								href="/https://www.instagram.com/brightflare_technologies?igsh=YnJycjVrZXQ1ZnEy"
+								href="https://www.instagram.com/brightflare_technologies?igsh=YnJycjVrZXQ1ZnEy"
 								target="_blank"
 							>
 								<Image
@@ -57,7 +57,7 @@ export default function Footer() {
 								/>
 							</Link>
 							<Link
-								href="/https://www.linkedin.com/company/brightflare-tech-academy"
+								href="https://www.linkedin.com/company/brightflare-tech-academy"
 								target="_blank"
 							>
 								<Image
@@ -66,7 +66,7 @@ export default function Footer() {
 								/>
 							</Link>
 							<Link
-								href="/https://wa.me/message/NLZX3GTSGSOCK1"
+								href="https://wa.me/message/NLZX3GTSGSOCK1"
 								target="_blank"
 							>
 								<Image
@@ -91,13 +91,13 @@ export default function Footer() {
 						<div className="flex flex-col gap-3">
 							<Link href="/#faqs">FAQs Section</Link>
 							<Link
-								href="/https://forms.gle/eEqkEUZew3vx87Ui6"
+								href="https://forms.gle/eEqkEUZew3vx87Ui6"
 								target="_blank"
 							>
 								Tutor form
 							</Link>
 							<Link
-								href="/https://forms.gle/mVtGyV5fH67m6pb18"
+								href="https://forms.gle/mVtGyV5fH67m6pb18"
 								target="_blank"
 							>
 								Sponsorship Form
