@@ -8,9 +8,9 @@ const HeroSection = () => {
 	return (
 		<div
 			id="hero"
-			className="w-full bg-almond pl-8 md:pl-20 pt-[150px] md:pt-[180px] flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0"
+			className="w-full bg-almond  pt-[150px] md:pt-[180px] flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0"
 		>
-			<div className="w-full md:w-[60%]">
+			<div className="w-full md:w-[60%] px-8 md:px-20">
 				<h1 className="font-bricolage text-darkGrey text-[40px] md:text-[55px] font-bold leading-[50px] md:leading-[70px]">
 					Empowering the future of tech enthusiasts through{" "}
 					<span className="text-customRed">education</span> and{" "}
@@ -24,13 +24,13 @@ const HeroSection = () => {
 					<CustomButton
 						btnTitle="Register For Free Program"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 px-4 h-[48px] bg-customBlack cursor-pointer"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 md:py-2 px-4 bg-customBlack cursor-pointer"
 						btnAction={() => router.push("/")}
 					/>
 					<CustomButton
 						btnTitle="Get A Personal Tutor"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack font-semibold border-2 py-2 px-4 h-[48px] bg-transparent border-customBlack cursor-pointer"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack font-semibold border-2 py-2 md:py-2 px-4 bg-transparent border-customBlack cursor-pointer"
 						btnAction={() => router.push("/")}
 					/>
 				</div>
@@ -46,7 +46,7 @@ const HeroSection = () => {
 				</div>
 			</div>
 
-			<div className="heroBg w-full h-screen md:w-[50%] flex items-center justify-center">
+			<div className="heroBg w-full h-[400px] md:h-screen md:w-[50%] flex items-center justify-center">
 				{/* <Image src={heroImage} alt="hero-image" className="" /> */}
 			</div>
 		</div>

@@ -87,7 +87,7 @@ export default function Navbar() {
 					btnAction={() => router.push("/")}
 				/>
 			</div>
-			<MobileMenu />
+			{/* <MobileMenu /> */}
 		</div>
 	);
 }
