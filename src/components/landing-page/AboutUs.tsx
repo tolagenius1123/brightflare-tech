@@ -13,7 +13,7 @@ export default function AboutUs() {
 			</div>
 			<div className="w-full md:w-1/2">
 				<div className="flex justify-between items-center"></div>
-				<h1 className="text-3xl md:text-4xl font-medium text-customBlack font-semibold">
+				<h1 className="text-3xl md:text-4xl text-customBlack font-semibold">
 					About Us
 				</h1>
 				<p className="mt-3 md:mt-4 text-[14px] md:text-[16px] text-customDarkGrey">
