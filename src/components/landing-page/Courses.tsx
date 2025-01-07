@@ -33,7 +33,7 @@ export default function Courses() {
 						UI/UX Design
 					</div>
 					<div className="w-full md:w-[250px] bg-white px-2 py-2 text-[14px] md:text-[16px]">
-						Data Analysis
+						Data Science
 					</div>
 					<div className="w-full md:w-[250px] bg-white px-2 py-2 text-[14px] md:text-[16px]">
 						Project Management

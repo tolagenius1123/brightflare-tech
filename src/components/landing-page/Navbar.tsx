@@ -34,7 +34,8 @@ export default function Navbar() {
 		<div
 			className={cn(
 				"w-full px-8 md:px-20 py-2 flex items-center justify-between fixed z-10",
-				isScrolling ? "backdrop-blur-md" : "bg-almond"
+				isScrolling ? "bg-white" : "bg-almond"
+				// isScrolling ? "backdrop-blur-md" : "bg-almond"
 			)}
 		>
 			<Link href="/">
