@@ -1,16 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-import {
-	ada,
-	bright,
-	musa,
-	joy,
-	Wale,
-	Demola,
-	Adebisi,
-	Tola,
-} from "@/assets/images";
+import { Wale, Demola, Adebisi, Tola } from "@/assets/images";
 import CustomButton from "@/components/CustomButton";
 import TeamCard from "./TeamCard";
 
@@ -66,7 +56,7 @@ export default function Team() {
 				</div>
 			</div> */}
 			<div className="mt-5 md:mt-10 w-full grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20">
-				{teamList.map((team, index) => (
+				{teamList.map((team) => (
 					<div className="" key={team.id}>
 						<TeamCard key={team.id} team={team} />
 					</div>
