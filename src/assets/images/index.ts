@@ -5,10 +5,10 @@ import musa from "./musa.svg";
 import ada from "./ada.svg";
 import joy from "./joy.svg";
 import bright from "./bright.svg";
-import Wale from "./wale.jpg";
-import Demola from "./demola.jpeg";
-import Tola from "./tola.jpg";
-import Adebisi from "./adebisi.jpeg";
+import Wale from "./wale.png";
+import Demola from "./demola.png";
+import Tola from "./tola.png";
+import Adebisi from "./adebisi.png";
 
 export {
 	brightflareLogo,

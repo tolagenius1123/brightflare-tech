@@ -55,7 +55,7 @@ export default function Team() {
 					<Image src={musa} alt="team-image" className="w-full" />
 				</div>
 			</div> */}
-			<div className="mt-5 md:mt-10 w-full grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20">
+			<div className="mt-5 md:mt-10 w-full grid grid-cols-1 md:grid-cols-4 gap-10">
 				{teamList.map((team) => (
 					<div className="" key={team.id}>
 						<TeamCard key={team.id} team={team} />
