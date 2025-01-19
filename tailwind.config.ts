@@ -9,6 +9,18 @@ export default {
 	],
 	theme: {
 		extend: {
+			animation: {
+				"scale-limited": "scale-limited 2s infinite",
+			},
+			keyframes: {
+				"scale-limited": {
+					"0%, 100%": { transform: "scale(1)" },
+					"50%": { transform: "scale(1.1, 1.1)" },
+				},
+			},
+			transformOrigin: {
+				"left-center": "left center",
+			},
 			colors: {
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",

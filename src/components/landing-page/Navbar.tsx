@@ -33,7 +33,7 @@ export default function Navbar() {
 	return (
 		<div
 			className={cn(
-				"w-full px-8 md:px-20 py-2 flex items-center justify-between fixed z-10",
+				"w-full px-8 md:px-16 py-2 flex items-center justify-between fixed z-10",
 				isScrolling ? "bg-white" : "bg-almond"
 				// isScrolling ? "backdrop-blur-md" : "bg-almond"
 			)}
@@ -72,14 +72,24 @@ export default function Navbar() {
 						Contact Us
 					</Link>
 				</div>
-				<CustomButton
-					btnTitle="Register"
-					btnType="button"
-					btnStyles="text-white rounded-sm border-none w-[110px] h-[50px] bg-customRed cursor-pointer"
-					btnAction={() =>
-						router.push("https://forms.gle/MJ1iNDnCoD9HKVj9A")
-					}
-				/>
+				<div className="flex items-center gap-3">
+					<CustomButton
+						btnTitle="Sponsor a Participant"
+						btnType="button"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack border-[2px] py-2 md:py-3 px-4 bg-transparent border-customBlack cursor-pointer hover:border-customRed hover:bg-customRed hover:text-white"
+						btnAction={() =>
+							router.push("https://forms.gle/mVtGyV5fH67m6pb18")
+						}
+					/>
+					<CustomButton
+						btnTitle="Register"
+						btnType="button"
+						btnStyles="text-[12px] md:text-[14px] text-white rounded-sm border-[2px] border-customRed py-2 md:py-3 px-6 bg-customRed cursor-pointer hover:bg-customDarkRed hover:border-customDarkRed"
+						btnAction={() =>
+							router.push("https://forms.gle/MJ1iNDnCoD9HKVj9A")
+						}
+					/>
+				</div>
 			</div>
 			<MobileMenu />
 		</div>

@@ -92,3 +92,18 @@ body {
 	white-space: nowrap;
 	border: 0;
 }
+
+@keyframes scale-limited {
+	0%,
+	100% {
+		transform: scale(1); /* Normal size */
+	}
+	50% {
+		transform: scale(1.1, 1.1); /* Expand on top, right, and bottom */
+	}
+}
+
+.animate-scale-limited {
+	animation: scale-limited 2s infinite;
+	transform-origin: left center; /* Anchor scaling to the left */
+}

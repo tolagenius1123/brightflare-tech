@@ -1,7 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
 import CustomButton from "../CustomButton";
-import { heroImage } from "@/assets/images";
+import { heroImage, Students } from "@/assets/images";
+import Image from "next/image";
 
 const HeroSection = () => {
 	const router = useRouter();
@@ -40,6 +41,16 @@ const HeroSection = () => {
 					/>
 				</div>
 				<div className="mt-5 flex items-center gap-4">
+					<CustomButton
+						btnTitle="Train your Staff"
+						btnType="button"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 md:py-4 px-4 bg-[#7D7D7D] cursor-pointer"
+						btnAction={() =>
+							router.push("https://forms.gle/vUNy1wVhD6Sqosmz6")
+						}
+					/>
+				</div>
+				<div className="mt-5 flex items-center gap-4">
 					<div className="flex flex-col gap-1 font-semibold">
 						<p>+12k</p>
 						<p>Tutors</p>
@@ -60,7 +71,11 @@ const HeroSection = () => {
 					backgroundRepeat: "no-repeat",
 				}}
 			>
-				{/* <Image src={heroImage} alt="hero-image" className="" /> */}
+				<Image
+					src={Students}
+					alt="hero-image"
+					className="animate-scale-limited mt-[200px] ml-[20px] md:mt-[400px] md:ml-[50px]"
+				/>
 			</div>
 		</div>
 	);

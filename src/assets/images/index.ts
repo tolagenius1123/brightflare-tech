@@ -9,6 +9,7 @@ import Wale from "./wale.png";
 import Demola from "./demola.png";
 import Tola from "./tola.png";
 import Adebisi from "./adebisi.png";
+import Students from "./students.svg";
 
 export {
 	brightflareLogo,
@@ -22,4 +23,5 @@ export {
 	Demola,
 	Tola,
 	Adebisi,
+	Students,
 };
