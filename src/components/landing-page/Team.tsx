@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import { Wale, Demola, Adebisi, Tola } from "@/assets/images";
 import CustomButton from "@/components/CustomButton";
 import TeamCard from "./TeamCard";
+import { motion } from "framer-motion";
 
 export default function Team() {
 	const router = useRouter();
@@ -57,9 +58,17 @@ export default function Team() {
 			</div> */}
 			<div className="mt-5 md:mt-10 w-full grid grid-cols-1 md:grid-cols-4 gap-10 items-center justify-items-center">
 				{teamList.map((team) => (
-					<div className="" key={team.id}>
+					<motion.div
+						className=""
+						key={team.id}
+						variants={{
+							hidden: { opacity: 0, scale: 0.9 },
+							visible: { opacity: 1, scale: 1 },
+						}}
+						transition={{ duration: 0.5 }}
+					>
 						<TeamCard key={team.id} team={team} />
-					</div>
+					</motion.div>
 				))}
 			</div>
 			<div className="mt-10 flex justify-around">

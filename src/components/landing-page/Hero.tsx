@@ -3,16 +3,27 @@ import { useRouter } from "next/navigation";
 import CustomButton from "../CustomButton";
 import { heroImage, Students } from "@/assets/images";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
 	const router = useRouter();
 
 	return (
-		<div
+		<motion.div
 			id="hero"
 			className="w-full bg-almond pt-[150px] md:pt-[120px] flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0"
 		>
-			<div className="w-full md:w-[60%] px-8 md:px-20">
+			<motion.div
+				className="w-full md:w-[60%] px-8 md:px-20"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ duration: 0.5 }}
+				variants={{
+					hidden: { opacity: 0, x: -50 },
+					visible: { opacity: 1, x: 0 },
+				}}
+			>
 				<h1 className="w-full font-bricolage text-darkGrey text-[40px] md:text-[47px] font-bold leading-[50px] md:leading-[70px]">
 					Empowering the future of tech enthusiasts through{" "}
 					<span className="text-customRed">education</span> and{" "}
@@ -22,7 +33,17 @@ const HeroSection = () => {
 					Empowering individuals with foundational and advanced tech
 					skills.
 				</p>
-				<div className="mt-5 flex items-center gap-4">
+				<motion.div
+					className="mt-5 flex items-center gap-4"
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.5 }}
+					transition={{ delay: 0.2, duration: 0.5 }}
+					variants={{
+						hidden: { opacity: 0, x: -50 },
+						visible: { opacity: 1, x: 0 },
+					}}
+				>
 					<CustomButton
 						btnTitle="Register For Free Program"
 						btnType="button"
@@ -39,8 +60,18 @@ const HeroSection = () => {
 							router.push("https://forms.gle/kpmTPkc1XZvdesSh7")
 						}
 					/>
-				</div>
-				<div className="mt-5 flex items-center gap-4">
+				</motion.div>
+				<motion.div
+					className="mt-5 flex items-center gap-4"
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.5 }}
+					transition={{ delay: 0.2, duration: 0.5 }}
+					variants={{
+						hidden: { opacity: 0, x: -50 },
+						visible: { opacity: 1, x: 0 },
+					}}
+				>
 					<CustomButton
 						btnTitle="Train your Staff"
 						btnType="button"
@@ -49,7 +80,7 @@ const HeroSection = () => {
 							router.push("https://forms.gle/vUNy1wVhD6Sqosmz6")
 						}
 					/>
-				</div>
+				</motion.div>
 				<div className="mt-5 flex items-center gap-4">
 					<div className="flex flex-col gap-1 font-semibold">
 						<p>+12k</p>
@@ -60,7 +91,7 @@ const HeroSection = () => {
 						<p>Lessons</p>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 
 			<div
 				className="w-full h-[400px] md:h-[120vh] md:w-[50%] flex items-center justify-center"
@@ -77,7 +108,7 @@ const HeroSection = () => {
 					className="animate-scale-limited mt-[200px] ml-[20px] md:mt-[400px] md:ml-[50px]"
 				/>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

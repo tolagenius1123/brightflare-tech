@@ -1,20 +1,44 @@
+"use client";
 import Image from "next/image";
 import { aboutUsImage } from "@/assets/icons";
+import { motion } from "framer-motion";
 
-export default function AboutUs() {
+const AboutUs = () => {
 	return (
 		<div
 			id="about"
 			className="bg-white px-8 md:px-20 py-20 flex flex-col md:flex-row gap-10 md:gap-20"
 		>
-			<div className="w-full md:w-1/2">
+			{/* {LEFT} */}
+			<motion.div
+				className="w-full md:w-1/2"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ duration: 0.5 }}
+				variants={{
+					hidden: { opacity: 0, x: -50 },
+					visible: { opacity: 1, x: 0 },
+				}}
+			>
 				<Image
 					src={aboutUsImage}
 					alt="about-image"
 					className="rounded-sm w-full"
 				/>
-			</div>
-			<div className="w-full md:w-1/2">
+			</motion.div>
+			{/* {RIGHT} */}
+			<motion.div
+				className="w-full md:w-1/2"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ duration: 0.5 }}
+				variants={{
+					hidden: { opacity: 0, x: 50 },
+					visible: { opacity: 1, x: 0 },
+				}}
+			>
 				<div className="flex justify-between items-center"></div>
 				<h1 className="text-3xl md:text-4xl text-customBlack font-semibold">
 					About Us
@@ -69,18 +93,9 @@ export default function AboutUs() {
 						ever-evolving digital world.
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
-}
-// Brightflare Technologies was initially established as a
-// 						renewable energy company focused on providing innovative
-// 						solar energy solutions. Recently, the company expanded
-// 						its vision by introducing an educational arm,
-// 						<span className="bg-customDarkRed text-white">
-// 							Brightflare Tech Academy, aimed at empowering
-// 							individuals with foundational and advanced tech
-// 							skills.
-// 						</span>
-// 						The academy addresses barriers to entry in the tech
-// 						industry, offering both free and paid training programs.
+};
+
+export default AboutUs;
