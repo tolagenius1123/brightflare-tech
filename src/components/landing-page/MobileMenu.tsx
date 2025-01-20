@@ -63,16 +63,28 @@ export default function MobileMenu() {
 									<SheetClose>Contact Us</SheetClose>
 								</Link>
 							</div>
-							<CustomButton
-								btnTitle="Register"
-								btnType="button"
-								btnStyles="text-white rounded-sm border-none w-[110px] h-[50px] bg-customRed cursor-pointer"
-								btnAction={() =>
-									router.push(
-										"https://forms.gle/MJ1iNDnCoD9HKVj9A"
-									)
-								}
-							/>
+							<div className="flex flex-col gap-2">
+								<CustomButton
+									btnTitle="Sponsor a Participant"
+									btnType="button"
+									btnStyles="text-[12px] md:text-[14px] w-[150px] h-[50px] rounded-sm text-customBlack border-[2px] bg-transparent border-customBlack cursor-pointer hover:border-customRed hover:bg-customRed hover:text-white"
+									btnAction={() =>
+										router.push(
+											"https://forms.gle/mVtGyV5fH67m6pb18"
+										)
+									}
+								/>
+								<CustomButton
+									btnTitle="Register"
+									btnType="button"
+									btnStyles="text-white text-[12px] md:text-[14px] rounded-sm border-none w-[150px] h-[50px] bg-customRed cursor-pointer hover:bg-customDarkRed hover:border-customDarkRed"
+									btnAction={() =>
+										router.push(
+											"https://forms.gle/MJ1iNDnCoD9HKVj9A"
+										)
+									}
+								/>
+							</div>
 						</div>
 					</div>
 					{/* <SheetFooter>

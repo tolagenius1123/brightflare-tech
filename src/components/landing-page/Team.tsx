@@ -67,7 +67,7 @@ export default function Team() {
 					<CustomButton
 						btnTitle="Join the Tutor Waiting List"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 md:py-4 px-4 bg-customBlack cursor-pointer"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-2 border-customBlack py-2 md:py-4 px-4 bg-customBlack cursor-pointer"
 						btnAction={() =>
 							router.push("https://forms.gle/eEqkEUZew3vx87Ui6")
 						}

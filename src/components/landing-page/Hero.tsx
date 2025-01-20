@@ -26,7 +26,7 @@ const HeroSection = () => {
 					<CustomButton
 						btnTitle="Register For Free Program"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 md:py-4 px-4 bg-customBlack cursor-pointer"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none w-[180px] h-[60px] px-4 bg-customBlack cursor-pointer"
 						btnAction={() =>
 							router.push("https://forms.gle/MJ1iNDnCoD9HKVj9A")
 						}
@@ -34,7 +34,7 @@ const HeroSection = () => {
 					<CustomButton
 						btnTitle="Get A Personal Tutor"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack font-semibold border-2 py-2 md:py-4 px-4 bg-transparent border-customBlack cursor-pointer"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-customBlack font-semibold border-2 w-[180px] h-[60px] bg-transparent border-customBlack cursor-pointer"
 						btnAction={() =>
 							router.push("https://forms.gle/kpmTPkc1XZvdesSh7")
 						}
@@ -44,7 +44,7 @@ const HeroSection = () => {
 					<CustomButton
 						btnTitle="Train your Staff"
 						btnType="button"
-						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none py-2 md:py-4 px-4 bg-[#7D7D7D] cursor-pointer"
+						btnStyles="text-[12px] md:text-[14px] rounded-sm text-white border-none w-[157px] md:w-[180px] h-[60px] bg-[#7D7D7D] cursor-pointer"
 						btnAction={() =>
 							router.push("https://forms.gle/vUNy1wVhD6Sqosmz6")
 						}
